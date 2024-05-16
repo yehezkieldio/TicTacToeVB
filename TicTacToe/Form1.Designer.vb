@@ -261,9 +261,9 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(StartPanel)
         Controls.Add(GamePanel)
         Controls.Add(LoadingPanel)
-        Controls.Add(StartPanel)
         Name = "Form1"
         Text = "Form1"
         StartPanel.ResumeLayout(False)
