@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         StartPanel = New Panel()
         StartSubtitle = New Label()
         StartTitle = New Label()
@@ -30,6 +31,7 @@ Partial Class Form1
         LoadingText = New Label()
         ProgressBar1 = New ProgressBar()
         GamePanel = New Panel()
+        TimerText = New Label()
         PictureBox9 = New PictureBox()
         PictureBox8 = New PictureBox()
         PictureBox7 = New PictureBox()
@@ -41,6 +43,8 @@ Partial Class Form1
         PictureBox1 = New PictureBox()
         CurrentPlayerText = New Label()
         QuitSessionButton = New Button()
+        GameTimer = New Timer(components)
+        RestartGame = New Button()
         StartPanel.SuspendLayout()
         LoadingPanel.SuspendLayout()
         GamePanel.SuspendLayout()
@@ -123,6 +127,8 @@ Partial Class Form1
         ' 
         ' GamePanel
         ' 
+        GamePanel.Controls.Add(RestartGame)
+        GamePanel.Controls.Add(TimerText)
         GamePanel.Controls.Add(PictureBox9)
         GamePanel.Controls.Add(PictureBox8)
         GamePanel.Controls.Add(PictureBox7)
@@ -138,6 +144,15 @@ Partial Class Form1
         GamePanel.Name = "GamePanel"
         GamePanel.Size = New Size(801, 406)
         GamePanel.TabIndex = 1
+        ' 
+        ' TimerText
+        ' 
+        TimerText.AutoSize = True
+        TimerText.Location = New Point(12, 31)
+        TimerText.Name = "TimerText"
+        TimerText.Size = New Size(79, 15)
+        TimerText.TabIndex = 11
+        TimerText.Text = "Time Elapsed:"
         ' 
         ' PictureBox9
         ' 
@@ -256,13 +271,25 @@ Partial Class Form1
         QuitSessionButton.Text = "Quit Game"
         QuitSessionButton.UseVisualStyleBackColor = True
         ' 
+        ' GameTimer
+        ' 
+        ' 
+        ' RestartGame
+        ' 
+        RestartGame.Location = New Point(582, 12)
+        RestartGame.Name = "RestartGame"
+        RestartGame.Size = New Size(100, 34)
+        RestartGame.TabIndex = 12
+        RestartGame.Text = "Restart Game"
+        RestartGame.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(StartPanel)
         Controls.Add(GamePanel)
+        Controls.Add(StartPanel)
         Controls.Add(LoadingPanel)
         Name = "Form1"
         Text = "Form1"
@@ -304,5 +331,8 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TimerText As Label
+    Friend WithEvents GameTimer As Timer
+    Friend WithEvents RestartGame As Button
 
 End Class
