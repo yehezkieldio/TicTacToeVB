@@ -59,16 +59,51 @@
                 ShowPage(GamePage)
             End If
         Next
+
+        CheckIfGamePanel_Loaded()
     End Sub
 
     Private Sub QuitSessionButton_Click(sender As Object, e As EventArgs) Handles QuitSessionButton.Click
         ShowPage(StartPage)
         ProgressBar1.Value = 0
+        CurrentPlayer = "X"c
+
+        For Each PictBox As PictureBox In GamePanel.Controls.OfType(Of PictureBox)()
+            If PictBox.Name.StartsWith("PictureBox") Then
+                PictBox.Image = Nothing
+            End If
+        Next
+    End Sub
+
+    Private Sub CheckIfGamePanel_Loaded()
+        If GamePanel.Visible = True Then
+            GamePanel_Paint(Me, Nothing)
+        End If
     End Sub
 
     Private Sub GamePanel_Paint(sender As Object, e As PaintEventArgs) Handles GamePanel.Paint
         CurrentPlayerText.Text = "Current Player: " & CurrentPlayer
 
+        For Each PictBox As PictureBox In GamePanel.Controls.OfType(Of PictureBox)()
+            If PictBox.Name.StartsWith("PictureBox") Then
+                AddHandler PictBox.Click, AddressOf PictureBox_Click
+            End If
+        Next
+    End Sub
 
+    Private Sub PictureBox_Click(sender As Object, e As EventArgs)
+        Dim PictBox As PictureBox = DirectCast(sender, PictureBox)
+
+        If PictBox.Image Is Nothing Then
+            If CurrentPlayer = "X"c Then
+                PictBox.Image = My.Resources.X
+                CurrentPlayer = "O"c
+            Else
+                PictBox.Image = My.Resources.O
+                CurrentPlayer = "X"c
+            End If
+        End If
+
+        CurrentPlayerText.Text = "Current Player: " & CurrentPlayer
     End Sub
 End Class

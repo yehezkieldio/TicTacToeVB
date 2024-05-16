@@ -141,82 +141,100 @@ Partial Class Form1
         ' 
         ' PictureBox9
         ' 
+        PictureBox9.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox9.BorderStyle = BorderStyle.FixedSingle
         PictureBox9.Location = New Point(248, 250)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(112, 82)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox9.TabIndex = 10
         PictureBox9.TabStop = False
         ' 
         ' PictureBox8
         ' 
+        PictureBox8.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox8.BorderStyle = BorderStyle.FixedSingle
         PictureBox8.Location = New Point(130, 250)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(112, 82)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox8.TabIndex = 9
         PictureBox8.TabStop = False
         ' 
         ' PictureBox7
         ' 
+        PictureBox7.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox7.BorderStyle = BorderStyle.FixedSingle
         PictureBox7.Location = New Point(12, 250)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(112, 82)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox7.TabIndex = 8
         PictureBox7.TabStop = False
         ' 
         ' PictureBox6
         ' 
+        PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox6.BorderStyle = BorderStyle.FixedSingle
         PictureBox6.Location = New Point(248, 162)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(112, 82)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 7
         PictureBox6.TabStop = False
         ' 
         ' PictureBox5
         ' 
+        PictureBox5.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox5.BorderStyle = BorderStyle.FixedSingle
         PictureBox5.Location = New Point(130, 162)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(112, 82)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 6
         PictureBox5.TabStop = False
         ' 
         ' PictureBox4
         ' 
+        PictureBox4.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox4.BorderStyle = BorderStyle.FixedSingle
         PictureBox4.Location = New Point(12, 162)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(112, 82)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox4.TabIndex = 5
         PictureBox4.TabStop = False
         ' 
         ' PictureBox3
         ' 
+        PictureBox3.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox3.BorderStyle = BorderStyle.FixedSingle
         PictureBox3.Location = New Point(248, 74)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(112, 82)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 4
         PictureBox3.TabStop = False
         ' 
         ' PictureBox2
         ' 
+        PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox2.BorderStyle = BorderStyle.FixedSingle
         PictureBox2.Location = New Point(130, 74)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(112, 82)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 3
         PictureBox2.TabStop = False
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox1.BorderStyle = BorderStyle.FixedSingle
         PictureBox1.Location = New Point(12, 74)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(112, 82)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
         ' 
