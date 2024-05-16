@@ -30,29 +30,29 @@ Partial Class Form1
         LoadingText = New Label()
         ProgressBar1 = New ProgressBar()
         GamePanel = New Panel()
+        PictureBox9 = New PictureBox()
+        PictureBox8 = New PictureBox()
+        PictureBox7 = New PictureBox()
+        PictureBox6 = New PictureBox()
+        PictureBox5 = New PictureBox()
+        PictureBox4 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
         CurrentPlayerText = New Label()
         QuitSessionButton = New Button()
-        PictureBox1 = New PictureBox()
-        PictureBox2 = New PictureBox()
-        PictureBox3 = New PictureBox()
-        PictureBox4 = New PictureBox()
-        PictureBox5 = New PictureBox()
-        PictureBox6 = New PictureBox()
-        PictureBox7 = New PictureBox()
-        PictureBox8 = New PictureBox()
-        PictureBox9 = New PictureBox()
         StartPanel.SuspendLayout()
         LoadingPanel.SuspendLayout()
         GamePanel.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' StartPanel
@@ -139,6 +139,87 @@ Partial Class Form1
         GamePanel.Size = New Size(801, 406)
         GamePanel.TabIndex = 1
         ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.BorderStyle = BorderStyle.FixedSingle
+        PictureBox9.Location = New Point(248, 250)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(112, 82)
+        PictureBox9.TabIndex = 10
+        PictureBox9.TabStop = False
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.BorderStyle = BorderStyle.FixedSingle
+        PictureBox8.Location = New Point(130, 250)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(112, 82)
+        PictureBox8.TabIndex = 9
+        PictureBox8.TabStop = False
+        ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.BorderStyle = BorderStyle.FixedSingle
+        PictureBox7.Location = New Point(12, 250)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(112, 82)
+        PictureBox7.TabIndex = 8
+        PictureBox7.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.BorderStyle = BorderStyle.FixedSingle
+        PictureBox6.Location = New Point(248, 162)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(112, 82)
+        PictureBox6.TabIndex = 7
+        PictureBox6.TabStop = False
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.BorderStyle = BorderStyle.FixedSingle
+        PictureBox5.Location = New Point(130, 162)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(112, 82)
+        PictureBox5.TabIndex = 6
+        PictureBox5.TabStop = False
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.BorderStyle = BorderStyle.FixedSingle
+        PictureBox4.Location = New Point(12, 162)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(112, 82)
+        PictureBox4.TabIndex = 5
+        PictureBox4.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.BorderStyle = BorderStyle.FixedSingle
+        PictureBox3.Location = New Point(248, 74)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(112, 82)
+        PictureBox3.TabIndex = 4
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BorderStyle = BorderStyle.FixedSingle
+        PictureBox2.Location = New Point(130, 74)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(112, 82)
+        PictureBox2.TabIndex = 3
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BorderStyle = BorderStyle.FixedSingle
+        PictureBox1.Location = New Point(12, 74)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(112, 82)
+        PictureBox1.TabIndex = 2
+        PictureBox1.TabStop = False
+        ' 
         ' CurrentPlayerText
         ' 
         CurrentPlayerText.AutoSize = True
@@ -157,78 +238,6 @@ Partial Class Form1
         QuitSessionButton.Text = "Quit Game"
         QuitSessionButton.UseVisualStyleBackColor = True
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Location = New Point(12, 74)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(112, 82)
-        PictureBox1.TabIndex = 2
-        PictureBox1.TabStop = False
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Location = New Point(130, 74)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(112, 82)
-        PictureBox2.TabIndex = 3
-        PictureBox2.TabStop = False
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Location = New Point(248, 74)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(112, 82)
-        PictureBox3.TabIndex = 4
-        PictureBox3.TabStop = False
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Location = New Point(12, 162)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(112, 82)
-        PictureBox4.TabIndex = 5
-        PictureBox4.TabStop = False
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Location = New Point(130, 162)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(112, 82)
-        PictureBox5.TabIndex = 6
-        PictureBox5.TabStop = False
-        ' 
-        ' PictureBox6
-        ' 
-        PictureBox6.Location = New Point(248, 162)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(112, 82)
-        PictureBox6.TabIndex = 7
-        PictureBox6.TabStop = False
-        ' 
-        ' PictureBox7
-        ' 
-        PictureBox7.Location = New Point(12, 250)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(112, 82)
-        PictureBox7.TabIndex = 8
-        PictureBox7.TabStop = False
-        ' 
-        ' PictureBox8
-        ' 
-        PictureBox8.Location = New Point(130, 250)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(112, 82)
-        PictureBox8.TabIndex = 9
-        PictureBox8.TabStop = False
-        ' 
-        ' PictureBox9
-        ' 
-        PictureBox9.Location = New Point(248, 250)
-        PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(112, 82)
-        PictureBox9.TabIndex = 10
-        PictureBox9.TabStop = False
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -245,15 +254,15 @@ Partial Class Form1
         LoadingPanel.PerformLayout()
         GamePanel.ResumeLayout(False)
         GamePanel.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
