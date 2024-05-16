@@ -4,6 +4,16 @@
 
         Alignments.StartMenu()
         Alignments.LoadingMenu()
+
+        Dim bmp As New Bitmap(Me.Width, Me.Height)
+
+        Using g As Graphics = Graphics.FromImage(bmp)
+            Dim rect As New Rectangle(0, 0, Me.Width, Me.Height)
+            Dim gradientBrush As New Drawing2D.LinearGradientBrush(rect, Color.Red, Color.Aqua, Drawing2D.LinearGradientMode.Vertical)
+            g.FillRectangle(gradientBrush, rect)
+        End Using
+
+        Me.BackgroundImage = bmp
     End Sub
 
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click

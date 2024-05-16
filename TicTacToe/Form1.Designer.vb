@@ -31,6 +31,7 @@ Partial Class Form1
         LoadingText = New Label()
         ProgressBar1 = New ProgressBar()
         GamePanel = New Panel()
+        RestartGame = New Button()
         TimerText = New Label()
         PictureBox9 = New PictureBox()
         PictureBox8 = New PictureBox()
@@ -44,7 +45,6 @@ Partial Class Form1
         CurrentPlayerText = New Label()
         QuitSessionButton = New Button()
         GameTimer = New Timer(components)
-        RestartGame = New Button()
         StartPanel.SuspendLayout()
         LoadingPanel.SuspendLayout()
         GamePanel.SuspendLayout()
@@ -127,6 +127,7 @@ Partial Class Form1
         ' 
         ' GamePanel
         ' 
+        GamePanel.BackgroundImageLayout = ImageLayout.Center
         GamePanel.Controls.Add(RestartGame)
         GamePanel.Controls.Add(TimerText)
         GamePanel.Controls.Add(PictureBox9)
@@ -144,6 +145,15 @@ Partial Class Form1
         GamePanel.Name = "GamePanel"
         GamePanel.Size = New Size(801, 406)
         GamePanel.TabIndex = 1
+        ' 
+        ' RestartGame
+        ' 
+        RestartGame.Location = New Point(582, 12)
+        RestartGame.Name = "RestartGame"
+        RestartGame.Size = New Size(100, 34)
+        RestartGame.TabIndex = 12
+        RestartGame.Text = "Restart Game"
+        RestartGame.UseVisualStyleBackColor = True
         ' 
         ' TimerText
         ' 
@@ -273,15 +283,6 @@ Partial Class Form1
         ' 
         ' GameTimer
         ' 
-        ' 
-        ' RestartGame
-        ' 
-        RestartGame.Location = New Point(582, 12)
-        RestartGame.Name = "RestartGame"
-        RestartGame.Size = New Size(100, 34)
-        RestartGame.TabIndex = 12
-        RestartGame.Text = "Restart Game"
-        RestartGame.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
